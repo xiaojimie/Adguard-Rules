@@ -1,3 +1,4 @@
+import sys
 import urllib.request
 
 urls_to_fetch =[
@@ -42,6 +43,14 @@ for r_type, url in urls_to_fetch:
         print(f"[*] 成功拉取并解析 {r_type} 规则: {url}")
     except Exception as e:
         print(f"[!] 拉取失败 {r_type} ({url}): {e}")
+
+SAFE_THRESHOLD = 10
+
+if len(domains) < SAFE_THRESHOLD:
+    print(f"[!] 致命异常：当前抓取到的总规则数 ({len(domains)}) 低于安全阈值 ({SAFE_THRESHOLD})。")
+    print("[!] 可能原因：上游仓库删库、大规模删减规则或 GitHub Raw 域名遭 SNI 阻断。")
+    print("[*] 触发保护机制：终止覆写本地文件，保留上一次的旧版订阅规则。")
+    sys.exit(1)
 
 # 写入 AdGuardHome 格式文件
 with open("adguard_rules.txt", "w", encoding="utf-8") as f:
