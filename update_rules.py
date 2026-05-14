@@ -51,7 +51,9 @@ try:
     with open("adguard_rules.txt", "w", encoding="utf-8") as f:
         f.write("! Title: Merged Reject & PCDN & HTTPDNS Rules\n")
         f.write("! Description: Auto-generated for AdGuard Home\n")
+        f.write(f"! Total Count: {len(domains)}\n")
         f.write(f"! Version: {current_time}\n")
+        f.write("\n")
         
         for domain in sorted(domains):
             f.write(f"||{domain}^\n")
