@@ -1,5 +1,6 @@
 ! Title: Merged Reject & PCDN & HTTPDNS Rules
 ! Description: Auto-generated for AdGuard Home
+! Version: 2026-05-14 19:44:58
 ||0kkkkkt.com^
 ||163jiasu.com^
 ||Fvid.atm.youku.com^
