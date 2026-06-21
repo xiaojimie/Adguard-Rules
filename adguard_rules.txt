@@ -1,7 +1,7 @@
 ! Title: Merged Reject & PCDN & HTTPDNS Rules
 ! Description: Auto-generated for AdGuard Home
 ! Total Count: 114
-! Version: 2026-06-15 04:22:01
+! Version: 2026-06-22 04:27:20
 
 ||0kkkkkt.com^
 ||163jiasu.com^
