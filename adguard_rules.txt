@@ -1,7 +1,7 @@
 ! Title: Merged Reject & PCDN & HTTPDNS Rules
 ! Description: Auto-generated for AdGuard Home
-! Total Count: 114
-! Version: 2026-07-20 04:08:42
+! Total Count: 115
+! Version: 2026-07-27 04:13:32
 
 ||0kkkkkt.com^
 ||163jiasu.com^
@@ -68,6 +68,7 @@
 ||httpdns.zhihu.com^
 ||httpdns.zybang.com^
 ||httpdns1.cc.cdnhwc5.com^
+||httpdnsmultiapivip.meituan.com^
 ||httpdnsvip.meituan.com^
 ||httpsdns.baidu.com^
 ||isure6.stream.qqmusic.qq.com^
